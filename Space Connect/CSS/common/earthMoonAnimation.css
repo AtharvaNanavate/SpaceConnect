@@ -1,0 +1,110 @@
+body {
+    -webkit-font-smoothing: antialiased;
+}
+.earth-demo {
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.earth-demo:before {
+    background-size: cover;
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.earth {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+}
+.earth img {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.earth .more-info {
+    background-image: linear-gradient(to bottom, rgba(10, 10, 10, 1), black);
+    border:5px solid #fff ;
+    border-radius: 1em;
+    color: #fff;
+    opacity: 0;
+    padding: 1em;
+    transform: scale(0.8);
+    transform-origin: 0 0;
+    width: 60vw;
+    height: 40vh;
+    margin-left: -25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.8em;
+    text-align:center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.earth .more-info h1 {
+    margin: auto;
+    
+}
+.earth .more-info h1, .earth .more-info li {
+    
+    opacity: 0;
+}
+.moon-container {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+}
+.moon {
+    animation: spin 20s linear infinite;
+    background: none;
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+    transform-origin: 25px;
+}
+.moon img {
+    transform: translateX(-160px) translateY(-160px);
+    width: 50px;
+}
+.earth img, .moon img {
+    border-radius: 50%;
+    box-shadow: 0 0 12em 1em rgba(110, 140, 200, .6);
+}
+.earth:hover img, .earth.active img {
+    transform: translateX(350px) translateY(-90px) scale(0.5);
+}
+.earth:hover ~ .moon-container, .earth.active ~ .moon-container {
+    transform: translateX(350px) translateY(-90px) scale(0.4);
+}
+.earth:hover ~ .moon-container img, .earth.active ~ .moon-container img {
+    transform: translateX(-140px) translateY(-140px);
+}
+.earth:hover .more-info, .earth.active .more-info {
+    opacity: 1;
+    transform: scale(1);
+}
+.earth:hover .more-info h1, .earth.active .more-info h1, .earth:hover .more-info li, .earth.active .more-info li {
+    opacity: 1;
+}
+* {
+    transition: all 4s cubic-bezier(0, 1.5, 0.3, 1);
+}
+@keyframes spin {
+    to {
+        transform: rotateZ(360deg);
+   }
+}

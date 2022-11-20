@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+@font-face {
+  font-family: 'AlphaCentauri Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AlphaCentauri Medium'), url('../../fonts/Alphacentauri-MVY4p.woff') format('woff');
+  }
+
+*{
+  font-family: 'Orbitron', sans-serif;
+}
+
+#sectionone{
+  cursor: url("../../images/landingPageAssets/night-blue-cursor.ico"), default;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Roboto";
+  list-style: none;
+  box-sizing: border-box;
+  background: #000;
+  height: auto;
+  
+}
+
+.wrapper{
+  position: absolute;
+display: flex;
+flex-flow: column wrap;
+height: 275vh;
+width: 100%;
+overflow: hidden;
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+@font-face {
+  font-family: 'AlphaCentauri Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AlphaCentauri Medium'), url('../../fonts/Alphacentauri-MVY4p.woff') format('woff');
+  }
+
+*{
+  font-family: 'Orbitron', sans-serif;
+  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Roboto";
+    list-style: none;
+    box-sizing: border-box;
+    background: #000;
+    height:auto;
+    min-height: 100vh;    
+}
+
+.wrapper{
+    position: absolute;
+  display: flex;
+  flex-flow: column wrap;
+  height:100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+#footer{
+  color: #fff;
+  position: absolute;
+  font-weight: bolder;
+  text-align: center;
+  width: 100%;
+  bottom: 0.4%;
+}

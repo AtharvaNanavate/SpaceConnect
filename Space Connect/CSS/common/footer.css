@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #footer {
+    margin-top: auto;
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    
+  }

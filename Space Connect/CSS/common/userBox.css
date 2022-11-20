@@ -1,0 +1,22 @@
+#guest{
+    display:none;
+    position: fixed;
+    z-index:100;
+    background-color:white;
+    top: 11%;
+    width: 35%;
+    height: 80px;
+    border-radius: 10px;
+    left: 80%;
+    transform: translateX(-50%);
+    
+    cursor: url("../../images/landingPageAssets/night-blue-cursor.ico"), default;
+  }
+  
+  #guest .heading-cart {
+    text-align: center;
+    height: 20%;
+    
+    padding: 10px 20px 0 20px;
+    font-weight: bold;
+  }

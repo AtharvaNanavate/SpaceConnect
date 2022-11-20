@@ -1,0 +1,94 @@
+
+nav {
+    position: fixed;
+    z-index: 100;
+    height: 8vh;
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    cursor: url("../../images/landingPageAssets/night-blue-cursor.ico"), default;
+  }
+  
+  
+  .logo a{
+    font-family: "AlphaCentauri Medium" !important;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  a:hover{
+  color: #ccc;
+  }
+  
+  #navbar-links{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+    width:70vh;
+  }
+  .navbar-a1{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  font-family: 'Orbitron', sans-serif;
+  }
+  
+  
+  nav .nav-links ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav .nav-links ul li {
+    padding: 0 4px;
+    list-style: none;
+  }
+  
+  nav .nav-links ul li img {
+    transform: scale(0.45);
+  }
+ 
+  
+ 
+  
+#cart-btn{
+  border: none;
+  background-color:transparent;
+position: relative;
+  padding:0;
+  margin-top: 8px;
+  height:50px;
+}
+
+#cart-btn #cart-badge{
+  display:none;
+  position: absolute;
+  border-radius: 40%;
+  background-color: #1AA7EC;
+  padding: 1px 5px;
+  color: white;
+  top: -25%;
+  left:50%;
+  font-size: 0.7rem;
+}
+#cart-badge{
+  margin-top: 20px;
+}
+#cart-btn:hover{
+  opacity: 0.7;
+  cursor: pointer; 
+ }
+ #user-img{
+  height:60px;
+}
+#user-img:hover{
+  opacity: 0.7;
+  cursor: pointer;  
+ }

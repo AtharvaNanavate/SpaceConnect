@@ -1,0 +1,65 @@
+
+#cart{
+    display:none;
+    position: fixed;
+    z-index:100;
+    background-color:white;
+    top: 11%;
+    width: 35%;
+    height: 240px;
+    border-radius: 10px;
+    left: 80%;
+    transform: translateX(-50%);
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+    cursor: url("../../images/landingPageAssets/night-blue-cursor.ico"), default;
+  }
+  
+  #cart .heading-cart {
+    text-align: center;
+    height: 20%;
+    border-bottom: solid 1px rgb(214, 210, 210);
+    padding: 20px;
+    font-weight: bold;
+  }
+  
+  #cart .content-cart {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #cart .content-cart p{
+    color:hsl(219, 9%, 45%);
+    margin-top: -5%;
+  }
+  
+  #cart .content-cart .product {
+    width: 90%;
+    height: 80%;
+    display: none;
+    flex-direction: column;
+    justify-content: center; 
+  }
+  
+  #cart .content-cart .product img{
+    width: 60px;
+    height:60px;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  
+  #cart .content-cart .product .product-meta {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+  }
+  
+  #cart .content-cart .product .product-meta button {
+  border: none;
+  background-color:transparent; 
+  }
+  
